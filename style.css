@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+user-select: none;
+}
+
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    gap: 20px;
+
+}
+
+label {
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+input {
+    display: none;
+}
+
+.theme-toggle:checked~.container {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
